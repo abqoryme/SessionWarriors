@@ -1,20 +1,21 @@
 {
-  "name": "knightbot-server",
+  "name": "baileys-pairing-backend",
   "version": "1.0.0",
-  "description": "Web server for KnightBot WhatsApp pairing and QR code.",
-  "main": "index.js",
+  "description": "Backend for Abqory WhatsApp Pairing using Baileys",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
-  "author": "NamaAnda",
+  "author": "Abqory",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^6.7.2",
+    "@whiskeysockets/baileys": "github:WhiskeySockets/Baileys",
     "express": "^4.19.2",
-    "libphonenumber-js": "^1.11.3",
-    "pino": "^8.21.0",
+    "pino": "^9.2.0",
     "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "pino-pretty": "^11.2.1"
   }
 }
